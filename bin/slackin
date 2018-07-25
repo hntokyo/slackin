@@ -14,6 +14,9 @@ args
   .option(['x', 'cors'], 'Enable CORS for all routes')
   .option(['C', 'coc'], 'Full URL to a CoC that needs to be agreed to')
   .option(['S', 'css'], 'Full URL to a custom CSS file to use on the main page')
+  .option(['I', 'blocked_ip_addresses'],    'One or more comma-separated IP addresses to deny invites to [$BLOCKED_IP_ADDRESSES]',           process.env.BLOCKED_IP_ADDRESSES)
+  .option(['D', 'blocked_email_domains'],   'One or more comma-separated email address domains to deny invites to [$BLOCKED_EMAIL_DOMAINS]', process.env.BLOCKED_EMAIL_DOMAINS)
+  .option(['E', 'blocked_email_addresses'], 'One or more comma-separated email addresses to deny invites to [$BLOCKED_EMAIL_ADDRESSES]',     process.env.BLOCKED_EMAIL_ADDRESSES)
   .option(['?', 'help'], 'Show the usage information')
 
 var flags = args.parse(process.argv, {
