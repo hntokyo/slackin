@@ -27,6 +27,9 @@ var flags = args.parse(process.argv, {
 var org = args.sub[0] || process.env.SLACK_SUBDOMAIN
 var token = args.sub[1] || process.env.SLACK_API_TOKEN
 var emails = process.env.EMAIL_SLACK_LIST || ''
+var blocked_ip_addresses = process.env.BLOCKED_IP_ADDRESSES || ''
+var blocked_email_domains = process.env.BLOCKED_EMAIL_DOMAINS || ''
+var blocked_email_addresses = process.env.BLOCKED_EMAIL_ADDRESSES || ''
 
 var gcaptcha_secret = args.sub[2] || process.env.GOOGLE_CAPTCHA_SECRET
 var gcaptcha_sitekey = args.sub[3] || process.env.GOOGLE_CAPTCHA_SITEKEY
@@ -45,6 +48,9 @@ if (!org || !token || !gcaptcha_sitekey || !gcaptcha_secret) {
   flags.emails = emails
   flags.gcaptcha_secret = gcaptcha_secret
   flags.gcaptcha_sitekey = gcaptcha_sitekey
+  flags.blocked_ip_addresses = blocked_ip_addresses
+  flags.blocked_email_domains = blocked_email_domains
+  flags.blocked_email_addresses = blocked_email_addresses
 }
 
 var port = flags.port
