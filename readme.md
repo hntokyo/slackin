@@ -14,15 +14,15 @@ Check out the [Demo](https://slackin.now.sh/) or read more about the [motivation
 Set up [Now](https://zeit.co/now) on your device and run this command. [Now](https://zeit.co/now) will automatically ask you for the required information and then spin up a deployment instantly. That easy!
 
 ```bash
-now rauchg/slackin
+now hntokyo/slackin
 ```
 
 Other platforms:
 
-- [Heroku](https://heroku.com/deploy?template=https://github.com/rauchg/slackin/tree/master)
+- [Heroku](https://heroku.com/deploy?template=https://github.com/hntokyo/slackin/tree/master)
 - [Azure](https://azuredeploy.net/)
-- [OpenShift](https://github.com/rauchg/slackin/wiki/OpenShift)
-- [IBM Bluemix](https://bluemix.net/deploy?repository=https://github.com/rauchg/slackin)
+- [OpenShift](https://github.com/hntokyo/slackin/wiki/OpenShift)
+- [IBM Bluemix](https://bluemix.net/deploy?repository=https://github.com/hntokyo/slackin)
 
 ### Tips
 

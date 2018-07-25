@@ -2,7 +2,7 @@
     "name": "slackin",
     "version": "0.14.0",
     "description": "Public Slack organizations made easy",
-    "repository": "rauchg/slackin",
+    "repository": "hntokyo/slackin",
     "main": "dist/index",
     "files": [
         "dist",
